@@ -1,0 +1,198 @@
+Vou juntar **todo o conteúdo importante que vimos** em um **checkpoint único** para você copiar e usar em outro chat ou guardar. 📦💻
+
+CHECKPOINT — SITE COM HTML + CSS + BOOTSTRAP
+
+1. BOOTSTRAP (CDN PARA USAR NO PROJETO)
+
+Colocar dentro do <head> do HTML:
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+Colocar antes de fechar o </body>:
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+---
+
+2. NAVBAR (SUBSTITUI HEADER + NAV)
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#5c2e00;">
+  <div class="container">
+
+```
+<a class="navbar-brand" href="#">Perfumaria do Zé</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+  <ul class="navbar-nav ms-auto">
+
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Início</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="cardapio.html">Cardápio</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="sobre.html">Sobre</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="galeria.html">Galeria</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="contato.html">Contato</a>
+    </li>
+
+  </ul>
+</div>
+```
+
+  </div>
+</nav>
+
+---
+
+3. BOTÕES BOOTSTRAP (SUBSTITUI .botao)
+
+Exemplo:
+
+<a href="cardapio.html" class="btn btn-danger mt-3">Ver Cardápio</a>
+
+Classes comuns:
+
+btn btn-primary   -> azul
+btn btn-danger    -> vermelho
+btn btn-success   -> verde
+btn btn-warning   -> amarelo
+btn btn-dark      -> preto
+
+---
+
+4. CLASSES IMPORTANTES DA NAVBAR
+
+navbar
+→ cria a barra de navegação
+
+navbar-expand-lg
+→ menu vira botão em telas pequenas
+
+navbar-dark
+→ texto claro para fundo escuro
+
+container
+→ centraliza o conteúdo
+
+navbar-brand
+→ nome ou logo do site
+
+navbar-toggler
+→ botão do menu no celular
+
+navbar-toggler-icon
+→ ícone de 3 linhas
+
+collapse navbar-collapse
+→ abre e fecha o menu no celular
+
+navbar-nav
+→ lista de links do menu
+
+nav-item
+→ cada item do menu
+
+nav-link
+→ estilo dos links
+
+ms-auto
+→ empurra menu para direita
+
+---
+
+5. EXEMPLO DE FOOTER FIXO
+
+footer {
+background-color: #5c2e00;
+color: white;
+text-align: center;
+padding: 10px;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+
+---
+
+6. EXEMPLO DE CARD (CSS)
+
+.card {
+background-color: white;
+padding: 20px;
+margin: 20px auto;
+width: 300px;
+border-radius: 10px;
+box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+---
+
+7. ESTRUTURA BÁSICA DO HTML
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Perfumaria do Zé</title>
+<link rel="stylesheet" href="css.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+NAVBAR AQUI
+
+<section>
+conteúdo do site
+</section>
+
+<footer>
+© 2026 Perfumaria do Zé
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+---
+
+RESUMO
+
+Bootstrap ajuda a:
+
+* criar menus prontos
+* fazer botões rápidos
+* deixar site responsivo
+* reduzir CSS manual
+* criar layout profissional
+
+✅ Agora você pode **copiar esse bloco inteiro e colar em outro chat** que ele mantém todo o contexto do seu projeto.
+
+---
+
+Se quiser, eu também posso fazer um **CHECKPOINT 2 (versão mais profissional)** com:
+
+* layout completo do site
+* grid do Bootstrap
+* cards de produtos
+* galeria responsiva
+* formulário de contato
+
+Que já vira praticamente **um site pronto para entregar no curso**. 🚀
