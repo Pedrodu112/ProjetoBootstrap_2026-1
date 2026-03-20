@@ -196,3 +196,54 @@ Se quiser, eu também posso fazer um **CHECKPOINT 2 (versão mais profissional)*
 * formulário de contato
 
 Que já vira praticamente **um site pronto para entregar no curso**. 🚀
+
+
+[[
+# CONFIGURAÇÃO GLOBAL (FAZER UMA VEZ)
+
+git config --global user.name "Pedrodu112"
+git config --global user.email "[mandraketnt@gmail.com](mailto:mandraketnt@gmail.com)"
+
+# Verificar configuração
+
+git config --global --list
+
+---
+
+# INICIAR GIT NO PROJETO (se ainda não inicializado)
+
+git init
+
+---
+
+# ADICIONAR TODOS OS ARQUIVOS
+
+git add .
+
+---
+
+# CRIAR COMMIT
+
+git commit -m "Primeiro commit do ProjetoBootstrap_2026-1"
+
+---
+
+# CONECTAR O REPOSITÓRIO LOCAL AO GITHUB
+
+git remote add origin https://github.com/Pedrodu112/ProjetoBootstrap_2026-1.git
+
+---
+
+# ENVIAR PROJETO PARA O GITHUB (PRIMEIRA VEZ)
+
+git branch -M main
+git push -u origin main
+
+---
+
+# FLUXO NORMAL (DEPOIS DA PRIMEIRA VEZ)
+
+git add .
+git commit -m "Descrição da alteração"
+git push
+]]
