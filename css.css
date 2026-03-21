@@ -8,6 +8,7 @@
 body {
     background-color: #f4e1c1;
     padding-bottom: 80px;
+    
 }
 
 section {
@@ -91,3 +92,60 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+.imagem-central {
+  max-height: 75vh;
+  margin: 45px;
+  border-radius: 40px;
+  object-fit: contain;
+}
+.botao-animado {
+  transition: all 0.3s ease;
+}
+
+.botao-animado:hover {
+  transform: scale(1.1); /* aumenta o tamanho */
+  background-color: #0d6efd; /* muda cor (opcional) */
+}
+.fonttitle {
+  font-family: 'Special Elite', cursive;
+}
+
+
+
+
+
+
+
+/* Caixa do formulário */
+.form-box {
+  background: rgba(77, 34, 17, 0.62);
+  border-radius: 15px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Título rústico */
+.titulo {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3rem;
+}
+
+/* Inputs */
+.form-control {
+  border-radius: 10px;
+  border: none;
+}
+
+/* Botão animado */
+.botao {
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+
+
