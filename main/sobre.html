@@ -1,91 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <title>Sobre - Perfumaria do Zé</title>
+    <title>Dashboard - Perfumaria do Zé</title>
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Seu CSS -->
     <link rel="stylesheet" href="../css.css">
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#5c2e00;">
-  <!--expand-lg → expande em telas grandes em telas menores vira menu colapsável-->
-    <div class="container">
+    <!-- NAVBAR (igual ao seu index) -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#5c2e00;">
+        <div class="container">
 
-    <a class="navbar-brand fonttitle" href="#">Perfumaria do Zé</a>
+            <a class="navbar-brand fonttitle" href="#">Perfumaria do Zé</a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
 
-        <li class="nav-item">
-          <a class="nav-link" href="index.html"><button class="btn btn-secondary botao-animado btn-sm fonttitle">Início</button></a>
-        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <button class="btn btn-secondary btn-sm fonttitle">Início</button>
+                        </a>
+                    </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="cosmeticos.html"><button class="btn btn-secondary botao-animado btn-sm fonttitle">Cosmeticos</button></a>
-        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">
+                            <button class="btn btn-warning btn-sm fonttitle">Dashboard</button>
+                        </a>
+                    </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="sobre.html"><button class="btn btn-secondary botao-animado btn-sm fonttitle">Sobre</button></a>
-        </li>
+                </ul>
+            </div>
 
-        <li class="nav-item">
-          <a class="nav-link" href="galeria.html"><button class="btn btn-secondary botao-animado btn-sm fonttitle">Galeria</button></a>
-        </li>
+        </div>
+    </nav>
 
-        <li class="nav-item">
-          <a class="nav-link" href="contato.html"><button class="btn btn-secondary botao-animado btn-sm fonttitle">Contato</button></a>
-        </li>
+    <!-- CONTEÚDO -->
+    <div class="container mt-4">
 
-      </ul>
+        <h2>Dashboard</h2>
+
+        <!-- CARDS -->
+        <div class="row text-center mt-3">
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Produtos</h5>
+                        <h3>50</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Vendas</h5>
+                        <h3>120</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Clientes</h5>
+                        <h3>35</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- TABELA -->
+        <div class="mt-4">
+
+            <h5>Últimas vendas</h5>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Cliente</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>212 VIP</td>
+                        <td>João</td>
+                        <td>R$ 350</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sauvage</td>
+                        <td>Maria</td>
+                        <td>R$ 420</td>
+                    </tr>
+
+                    <tr>
+                        <td>Invictus</td>
+                        <td>Pedro</td>
+                        <td>R$ 300</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
     </div>
 
-  </div>
-</nav>
+    <!-- RODAPÉ -->
+    <footer>
+        <p>© 2026 Perfumaria do Zé - Todos os direitos reservados</p>
+    </footer>
 
-<section>
-  
-  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<div class="container d-flex justify-content-center align-items-center vh-100">
-  
-  <div class="form-box p-4">
-    <h2 class="text-center mb-4 titulo">Contato</h2>
-
-    <form>
-      <div class="mb-3">
-        <label class="form-label">Nome</label>
-        <input type="text" class="form-control" placeholder="Digite seu nome">
-      </div>
-
-      <div class="mb-3">
-        <label class="form-label">Email</label>
-        <input type="email" class="form-control" placeholder="Digite seu email">
-      </div>
-
-      <div class="mb-3">
-        <label class="form-label">Mensagem</label>
-        <textarea class="form-control" rows="3" placeholder="Digite sua mensagem"></textarea>
-      </div>
-
-      <button type="submit" class="btn btn-dark w-100 5c2e00;">
-        Enviar
-      </button>
-    </form>
-  </div>
-
-</div>
-
-
-</section>
-
-<footer>
-    <p>© 2026 Perfumaria do Zé</p>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
