@@ -147,5 +147,33 @@ html {
   box-shadow: 0 5px 15px rgba(0,0,0,0.4);
 }
 
+/* ===== FORMULÁRIO CADASTRO ===== */
 
 
+.form-label {
+  font-weight: bold;
+  color: white;
+}
+
+
+
+.btn-danger {
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn-danger:hover {
+  transform: scale(1.05);
+}
+
+/* ===== SEÇÃO DE DESTAQUE ===== */
+
+.destaque-produto {
+  transition: 0.3s;
+  border-radius: 15px;
+}
+
+.destaque-produto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
